@@ -10,7 +10,7 @@ import java.nio.file.Paths;
 import java.util.stream.Collectors;
 
 public class PrepareDataApp {
-    public static void forcePrepareData() {
+    public static void forcePrepareData() {  // подготовка данных
         SessionFactory factory = new Configuration()
                 .configure("many_to_many/hibernate.cfg.xml")
                 .buildSessionFactory();

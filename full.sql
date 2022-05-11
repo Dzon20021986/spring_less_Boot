@@ -1,7 +1,7 @@
 
 
 DROP TABLE IF EXISTS products CASCADE;
-CREATE TABLE products (id bigint PRIMARY KEY, title VARCHAR(255), cost int);
+CREATE TABLE products (id bigserial PRIMARY KEY, title VARCHAR(255), cost int);
 INSERT INTO products (title, cost) VALUES
 ('Apple', 25),
 ('Coconut', 35),
@@ -15,7 +15,7 @@ INSERT INTO products (title, cost) VALUES
 ('Mango', 125);
 
 DROP TABLE IF EXISTS customers CASCADE;
-CREATE TABLE customers (id bigint PRIMARY KEY, name VARCHAR(255));
+CREATE TABLE customers (id bigserial PRIMARY KEY, name VARCHAR(255));
 INSERT INTO customers (name) VALUES
 ('Alexander'),
 ('Vladimir'),

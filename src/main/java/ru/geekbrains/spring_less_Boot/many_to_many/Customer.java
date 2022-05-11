@@ -1,7 +1,7 @@
 package ru.geekbrains.spring_less_Boot.many_to_many;
 
 
-import ru.geekbrains.spring_less_Boot.Model.Product;
+import ru.geekbrains.spring_less_Boot.many_to_many.Product;
 
 import javax.persistence.*;
 import java.util.List;

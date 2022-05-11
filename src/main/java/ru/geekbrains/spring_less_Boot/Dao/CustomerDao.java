@@ -1,2 +1,4 @@
-package ru.geekbrains.spring_less_Boot.Dao;public class CustomerDao {
+package ru.geekbrains.spring_less_Boot.Dao;
+
+public class CustomerDao {
 }

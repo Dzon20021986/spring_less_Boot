@@ -4,12 +4,12 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
 
-public class ManyToManyApp {
+public class ManyToManyApp {   // многие ко многим.////
     public static void main(String[] args) {
         PrepareDataApp.forcePrepareData();
 
         SessionFactory factory = new Configuration()
-                .configure("many_ta_many/hibernate.cfg.xml")
+                .configure("many_to_many/hibernate.cfg.xml")
                 .buildSessionFactory();
 
         Session session = null;

@@ -11,7 +11,7 @@ public class DaoApp {
     public static void init() {
         PrepareDataApp.forcePrepareData();
         factory = new Configuration()
-                .configure("many_to_many/hibernate.cfg.xml")
+                .configure("hibernate.cfg.xml")
                 .buildSessionFactory();
     }
 

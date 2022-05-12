@@ -10,13 +10,13 @@ import java.nio.file.Paths;
 import java.util.stream.Collectors;
 
 public class PrepareDataApp {
-    public static void forcePrepareData() {  // подготовка данных
+    public static void forcePrepareData() {  ///// подготовка данных
         SessionFactory factory = new Configuration()
-                .configure("many_to_many/hibernate.cfg.xml")
+                .configure("hibernate.cfg.xml")
                 .buildSessionFactory();
         Session session = null;
         try {
-            String sql = Files.lines(Paths.get("full.sql")).collect(Collectors.joining(" "));
+            String sql = Files.lines(Paths.get("import.sql")).collect(Collectors.joining(" "));
             session = factory.getCurrentSession();
             session.beginTransaction();
             session.createNativeQuery(sql).executeUpdate();

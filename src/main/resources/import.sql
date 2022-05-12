@@ -39,3 +39,6 @@ INSERT INTO products_customers (product_id, customer_id) VALUES
 (9, 4),
 (10,5),
 (10,1);
+
+
+

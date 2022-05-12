@@ -9,7 +9,7 @@ public class ManyToManyApp {   // многие ко многим.////
         PrepareDataApp.forcePrepareData();
 
         SessionFactory factory = new Configuration()
-                .configure("many_to_many/hibernate.cfg.xml")
+                .configure("hibernate.cfg.xml")
                 .buildSessionFactory();
 
         Session session = null;
